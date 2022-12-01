@@ -1,7 +1,7 @@
-prog:observateur.o main1.o
-      gcc observateur.o main1.o -o prog
+prog:ob.o mainob.o
+	gcc ob.o mainob.o -o prog
 
-main1.o:main1.c
-   gcc -c main1.c
-observateur.o:observateur.c
-     gcc -c observateur.c
+mainob.o:mainob.c
+	gcc -c mainob.c
+ob.o:ob.c
+	gcc -c ob.c
